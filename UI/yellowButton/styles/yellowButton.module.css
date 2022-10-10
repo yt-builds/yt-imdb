@@ -1,0 +1,13 @@
+.logoContainer {
+    background-color: var(--logoColor);
+    width: fit-content;
+    padding: 2px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logoText {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: black;
+}

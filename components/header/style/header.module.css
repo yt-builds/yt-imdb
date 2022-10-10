@@ -1,0 +1,151 @@
+.headerSection{
+    background-color: var(--lightBlack);
+    padding: 0.8rem 0;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.IconContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.IconContainer,
+.headerProContainer,
+.signInContainer,
+.languageContaienr{
+    cursor: pointer;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.headerProContainer,
+.signInContainer,
+.languageContainer {
+    padding: 5px 10px;
+}
+
+.IconContainer:hover,
+.headerProContainer:hover,
+.signInContainer:hover,
+.languageContaienr:hover{
+    background-color: var(--hoverLightBlack);
+}
+
+.IconContainer > span{
+    color: var(--white);
+}
+
+.icon{
+    color: var(--lightGrey);
+}
+
+.headerSearchContainer{
+    background-color: var(--white);
+    display: flex;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.headerSearch{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 5px;
+}
+
+.headerSearch > input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.headerSearch > input::placeholder,
+.searchIcon{
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.headerDropdownAll{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+.headerDropdownAll > span,
+.arrowDropDownIcon{
+    color: var(--lightBlack);
+}
+
+.headerProSpan{
+    color: var(--blue);
+}
+
+.verticalLine{
+    background-color: var(--lightGrey);
+    width: 1px;
+    height: 25px;
+}
+
+.responsiveMenuIcon,
+.responsiveSearchIcon{
+    display: none;
+    margin-top: 2px;
+}
+
+.responsiveSearchIcon{
+    color: var(--white);
+}
+
+@media only screen and (max-width: 907px) {
+    .headerContainer{
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .headerProContainer,
+    .IconContainer,
+    .languageContaienr,
+    .watchListText{
+        display: none;
+    }
+
+    .responsiveWatchListContainer,
+    .responsiveMenuIcon{
+        display: flex;
+    }
+
+    .headerSearchContainer{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .headerContainer{
+        gap: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 473px) {
+    .headerSearchContainer{
+        display: none;
+    }
+
+    .headerContainer{
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    .responsiveSearchIcon{
+        display: flex;
+    }
+}

@@ -1,0 +1,67 @@
+.whatToWatchContainer{
+    max-width: 67.5rem;
+    margin: 2rem auto;
+}
+
+.getRecomendation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customRecomendation{
+    color: var(--blueColor);
+    border-radius: 4px;
+    padding: 0.5rem;
+    padding-right: 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.customRecomendation:hover{
+    background-color: var(--blueHover);
+    transition: all 0.2s;
+}
+
+.topPicks{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.topPicks::before{
+    content: "";
+    background-color: var(--logoColor);
+    width: 4px;
+    height: 2rem;
+    margin-left: -0.75rem;
+    align-self: flex-start;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.rightIcon{
+    font-size: 30px;
+}
+
+.topPicks:hover .rightIcon{
+    color: var(--logoColor);
+}
+
+.topPicksSubText{
+    color: var(--lightGrey);
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .getRecomendation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,30 @@
+.container{
+    margin-top: 1.5rem;
+}
+
+.carouselContainer > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselContainer button{
+    border: 2px solid white;
+}
+
+.carouselContainer [aria-label="Go to previous slide"] {
+    position: absolute;
+    left: 0;
+    margin-left: 0.2rem;
+}
+
+.carouselContainer [aria-label="Go to next slide"] {
+    position: absolute;
+    right: 0;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 566px) {
+    .carouselContainer>ul {
+        gap: 1.5rem;
+    }
+}

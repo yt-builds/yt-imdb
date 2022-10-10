@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: var(--fullBlack);
+  color: var(--white);
+}
+
+:root {
+  --fullBlack: rgb(0, 0, 0);
+  --logoColor: #F5C518;
+  --white: rgba(255, 255, 255, 1);
+  --lightGrey: rgba(216, 206, 206, 0.685);
+  --lightBlack: #121212;
+  --blue: #33C5F3;
+  --hoverLightBlack: rgba(75, 71, 71, 0.514);
+  --watchList: #282420;
+  --blueColor: #176edf;
+  --blueHover: #25518b49;
+}
+
+span{
+  font-size: 13.5px;
+  color: var(--white);
+  letter-spacing: 1.1px;
+  font-weight: bold;
+}
+
+h1,
+h2,h3 {
+  color: var(--logoColor);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

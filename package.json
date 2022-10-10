@@ -1,0 +1,28 @@
+{
+  "name": "imdb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.8",
+    "firebase": "^8.2.1",
+    "next": "12.3.1",
+    "next-auth": "^4.12.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-multi-carousel": "^2.8.2",
+    "react-responsive-carousel": "^3.2.23"
+  },
+  "devDependencies": {
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1"
+  }
+}

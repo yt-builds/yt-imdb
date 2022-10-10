@@ -1,0 +1,48 @@
+.trendingContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 67.5rem;
+    margin: 1rem auto;
+}
+
+.carouselContainer{
+    flex: 0.70;
+}
+
+.upNextContainer{
+    flex: 0.30;
+}
+
+.nextMoviesContainer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 18rem;
+    background: linear-gradient(var(--hoverLightBlack), rgba(255, 0, 0, 0) 70.71%);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* Edge, Internet Explorer */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.nextMoviesContainer::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    .trendingContainer{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 946px){
+    .upNextContainer{
+        display: none;
+    }
+    .carouselContainer{
+        flex: 1;
+    }
+}

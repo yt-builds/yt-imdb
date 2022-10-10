@@ -1,0 +1,139 @@
+.playIconContainer{
+    border: 2px solid white;
+    padding: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-self: flex-start;
+}
+
+.videoFeatureBox{
+    position: relative;
+}
+
+.videoFeatureBox:hover{
+    cursor: pointer;
+}
+
+.descriptionContaienr{
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    position: absolute;
+    inset: 0;
+    inset-inline-start: 10px;
+    inset-inline-end: 10px;
+}
+
+.filmDescriptonContainer{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.videoFeatureBox:hover .playIconContainer{
+    cursor: pointer;
+    border-color: var(--logoColor);
+    color: var(--logoColor);
+}
+
+.filmNameContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.addtoWishIcon{
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    left: -7px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.posterImage{
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.hop{
+    position: relative;
+}
+
+.shadowEffect{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--fullBlack), var(--fullBlack), transparent);
+    margin-top: -6.5rem;
+    isolation: isolate;
+}
+
+.videoFeatureBox:hover::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(198deg, var(--lightBlack) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.filmNameContainer span:first-child{
+    font-size: 1.5rem;
+    /* Turncate line text to max 2 lines */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.filmNameContainer span:last-child,
+.filmDescriptonContainer span:last-child{
+    color: var(--lightGrey);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+    .filmDescriptonContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filmNameContainer span:first-child{
+        font-size: 1.2rem;
+    }
+    .playIconContainer{
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .posterImage{
+        height: 200px;
+        width: 150px;
+    }
+
+    .addtoWishIcon{
+        left: 1px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .playIconContainer{
+        padding: 0.5rem;
+    }
+
+    .filmNameContainer span:first-child{
+        font-size: 1rem;
+    }
+
+    .filmNameContainer span:last-child,
+    .filmDescriptonContainer span:last-child {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 447px) {
+    .posterImage{
+        height: 150px;
+        width: 110px;
+    }
+}

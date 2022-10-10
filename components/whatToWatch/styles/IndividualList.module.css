@@ -1,0 +1,94 @@
+.OneCard {
+    background: var(--hoverLightBlack);
+    ;
+    width: fit-content;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.bookmarkIcon {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.posterContainer {
+    width: 11.5rem;
+    height: 273px;
+}
+
+.descriptionContainer {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 11.5rem;
+    height: 185px;
+}
+
+.ratingStar {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.2rem;
+    padding: 1rem 0;
+}
+
+.ratingStar>span {
+    font-size: 15px;
+}
+
+.starIcon {
+    color: var(--logoColor);
+    font-size: 23px;
+}
+
+.filmNameContaienr {
+    height: 3rem;
+}
+
+.watchListButton {
+    background: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--blueColor);
+    cursor: pointer;
+}
+
+.watchListButton>span {
+    color: var(--blueColor);
+}
+
+.trailerInfoContainer,
+.trailerContainer {
+    display: flex;
+    align-items: center;
+}
+
+.trailerInfoContainer {
+    justify-content: space-between;
+}
+
+.trailerContainer {
+    gap: 0.1rem;
+}
+
+.infoIcon {
+    font-size: 22px;
+}
+
+@media (max-width: 330px) {
+    .posterContainer {
+        width: 8.5rem;
+    }
+
+    .descriptionContainer {
+        width: 8.5rem;
+    }
+}
